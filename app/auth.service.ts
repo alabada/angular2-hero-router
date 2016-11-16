@@ -12,6 +12,7 @@ export class AuthService {
   // store the URL so we can redirect after logging in
   redirectUrl: string;
 
+  // 模拟登录
   login(): Observable<boolean> {
     return Observable.of(true).delay(1000).do(val => this.isLoggedIn = true);
   }

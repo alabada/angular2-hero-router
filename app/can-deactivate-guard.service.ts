@@ -1,18 +1,18 @@
-import { Injectable }           from '@angular/core';
-import { CanDeactivate,
+import {Injectable}           from '@angular/core';
+import {
+  CanDeactivate,
   ActivatedRouteSnapshot,
-  RouterStateSnapshot }  from '@angular/router';
+  RouterStateSnapshot
+}  from '@angular/router';
 
-import { CrisisDetailComponent } from './crisis-center/crisis-detail.component';
+import {CrisisDetailComponent} from './crisis-center/crisis-detail.component';
 
 @Injectable()
 export class CanDeactivateGuard implements CanDeactivate<CrisisDetailComponent> {
 
-  canDeactivate(
-    component: CrisisDetailComponent,
-    route: ActivatedRouteSnapshot,
-    state: RouterStateSnapshot
-  ): Promise<boolean> | boolean {
+  canDeactivate(component: CrisisDetailComponent,
+                route: ActivatedRouteSnapshot,
+                state: RouterStateSnapshot): Promise<boolean> | boolean {
     // Get the Crisis Center ID
     console.log(route.params['id']);
 

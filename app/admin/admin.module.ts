@@ -10,7 +10,7 @@ import { AdminRoutingModule }       from './admin-routing.module';
     CommonModule,
     AdminRoutingModule
   ],
-  declarations: [
+  declarations: [  // 声明本模块所有的视图类
     AdminComponent,
     AdminDashboardComponent,
     ManageCrisesComponent,

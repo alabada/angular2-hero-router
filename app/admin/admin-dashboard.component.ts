@@ -1,13 +1,13 @@
-import { Component, OnInit }  from '@angular/core';
-import { ActivatedRoute }     from '@angular/router';
-import { Observable }         from 'rxjs/Observable';
+import {Component, OnInit}  from '@angular/core';
+import {ActivatedRoute}     from '@angular/router';
+import {Observable}         from 'rxjs/Observable';
 
-import { PreloadSelectedModules } from '../selective-preload-strategy';
+import {PreloadSelectedModules} from '../selective-preload-strategy';
 
 import 'rxjs/add/operator/map';
 
 @Component({
-  template:  `
+  template: `
     <p>Dashboard</p>
 
     <p>Session ID: {{ sessionId | async }}</p>

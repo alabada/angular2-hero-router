@@ -19,8 +19,8 @@ import {DialogService} from "./dialog.service";
     BrowserModule,
     FormsModule,
     HeroesModule,
-    // CrisisCenterModule,
-    // AdminModule,
+    // CrisisCenterModule, // 将危机中心模块导入 惰性加载了，在此移除
+    // AdminModule, // 我们使用惰性加载该模块，需要将该模块分离到一个彻底独立的模块。这里将其移除
     LoginRoutingModule,
     AppRoutingModule
     // RouterModule.forRoot([ // 在APPModule中提供RouterModule，让该路由器在应用的任何地方都能被使用。

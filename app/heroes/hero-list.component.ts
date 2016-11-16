@@ -10,7 +10,6 @@ import {Hero, HeroService}  from './hero.service';
     <ul class="items">
       <li *ngFor="let hero of heroes"
         [class.selected]="isSelected(hero)"
-        <!-- 事件绑定一个方法 -->
         (click)="onSelect(hero)">
         <span class="badge">{{hero.id}}</span> {{hero.name}}
       </li>
